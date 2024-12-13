@@ -29,3 +29,18 @@ Gomoku is a two-player strategy board game where players alternate placing black
 ├─ main.py               # Mode selector
 ├─ weights.npy           # Trained weights using feature_extractor.py and train_rl.py
 └─ README.md             # Readme file
+
+```
+
+## Evaluation
+Since weights.npy already contains the trained weight you can simply evaluate and simulate a game between the AI agent and SAP by executing
+```bash
+python simulate_games.py
+```
+
+## Playing with GUI
+It is also possible to try different modes and interact with the game with
+```bash
+python main.py
+```
+
