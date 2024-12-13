@@ -27,4 +27,5 @@ Gomoku is a two-player strategy board game where players alternate placing black
 ├─ simulate_games.py     # Simulate multiple games for AI vs. SAP
 ├─ GomokuGUI.py          # GUI implementation for Gomoku
 ├─ main.py               # Mode selector
+├─ weights.npy           # Trained weights using feature_extractor.py and train_rl.py
 └─ README.md             # Readme file
