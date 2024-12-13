@@ -14,17 +14,17 @@ Gomoku is a two-player strategy board game where players alternate placing black
   - `HumanPlayer`: Allows human input through a GUI.
 - **Training and Evaluation:**
   - `train_rl.py`: Trains the agent and saves learned weights.
-  - `simulate_games.py`: Tests and reports AI’s performance against the SimpleAdjacentPlayer.
-- **GUI:** A Tkinter-based GUI (`GomokuGUI.py`) and a mode selector (`main.py`) to play or watch AI vs AI matches.
+  - `simulate_games.py`: Tests and reports AI’s performance against the SimpleAdjacentPlayer (SAP).
+- **GUI:** A Tkinter-based GUI (`GomokuGUI.py`) and a mode selector (`main.py`) that enables the following modes: Human vs. Human, Human vs. AI, AI vs. AI, AI vs. SAP, and Human vs. SAP
 
 ## Project Structure
 ```bash
 .
 ├─ GomokuEnv.py          # Gomoku environment definition
 ├─ train_rl.py           # Training script (SARSA(λ) with linear approximation)
-├─ feature_extractor.py  # Extracts features for Q-value approximation
-├─ players.py            # Player classes: Human, AI, SimpleAdjacent
-├─ simulate_games.py     # Simulate multiple games for evaluation
+├─ feature_extractor.py  # Extracts features from domain knowledge of this game
+├─ players.py            # Player classes - Human, AI, and SAP
+├─ simulate_games.py     # Simulate multiple games for AI vs. SAP
 ├─ GomokuGUI.py          # GUI implementation for Gomoku
-├─ main.py               # Mode selector for different matchups
-└─ README.md             # This README file
+├─ main.py               # Mode selector
+└─ README.md             # Readme file
