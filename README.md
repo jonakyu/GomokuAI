@@ -43,4 +43,9 @@ It is also possible to try different modes and interact with the game with
 ```bash
 python main.py
 ```
+## Credits / Refernce
 
+Winner Checking Logic
+The logic used to determine if a player is victorious is adapted from a common approach found in various Gomoku implementations. In this case, it was referenced from (https://github.com/YoniAnk/Gomoku-Ai-Player/blob/main/src/Gomuko.py)
+
+The idea is to check every directions (horizontal, vertical, two diagonals) to see if the newly placed stone completes a chain of 5 or more consecutive stones. If the total reaches five or more stones, the player that placed the stone is declared as a winner.
